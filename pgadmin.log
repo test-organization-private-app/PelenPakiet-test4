@@ -1,0 +1,140 @@
+2021-11-10 09:55:38 ERROR  : BŁĄD:  błąd składni w lub blisko "name"
+LINE 1: name := (SELECT id from databasehistory);
+        ^
+2021-11-10 09:55:47 ERROR  : BŁĄD:  błąd składni w lub blisko "nazwa"
+LINE 1: nazwa := (SELECT id from databasehistory);
+        ^
+2021-11-10 09:56:38 ERROR  : BŁĄD:  błąd składni w lub blisko "numeric"
+LINE 2: nazwa numeric(20,10);
+              ^
+2021-11-10 09:56:42 ERROR  : BŁĄD:  błąd składni na końcu danych wejściowych
+LINE 1: DECLARE 
+                ^
+2021-11-10 09:56:59 ERROR  : BŁĄD:  błąd składni w lub blisko "numeric"
+LINE 2: nazwa numeric(20,10);
+              ^
+2021-11-10 09:57:39 ERROR  : BŁĄD:  błąd składni w lub blisko ";"
+LINE 1: CREATE TABLE wersje;
+                           ^
+2021-11-10 09:57:43 ERROR  : BŁĄD:  błąd składni na końcu danych wejściowych
+LINE 1: CREATE TABLE wersje
+                           ^
+2021-11-10 09:58:12 ERROR  : BŁĄD:  błąd składni na końcu danych wejściowych
+LINE 1: CREATE TABLE wersje(wersja, datablock, file)
+                                                    ^
+2021-11-10 09:58:14 ERROR  : BŁĄD:  błąd składni na końcu danych wejściowych
+LINE 1: CREATE TABLE wersje(wersja, datablock, file)
+                                                    ^
+2021-11-22 09:52:15 ERROR  : BŁĄD:  błąd składni w lub blisko "versions"
+LINE 1: ...elete from files where id in (select fileid froom versions w...
+                                                             ^
+2021-11-22 09:52:35 ERROR  : BŁĄD:  błąd składni w lub blisko ";"
+LINE 1: ...ablockid in(select id from datablocks where datastoreid=2));
+                                                                      ^
+2021-11-22 09:52:48 ERROR  : BŁĄD:  modyfikacja lub usunięcie na tabeli "files" narusza klucz obcy "fk_versions_files" tabeli "versions"
+DETAIL:  Klucz (id)=(668) ma wciąż odwołanie w tabeli "versions".
+2021-11-22 09:56:35 ERROR  : BŁĄD:  błąd składni na końcu danych wejściowych
+LINE 4: ...select fileid from versions where id in (select id from ids)
+                                                                       ^
+2021-11-22 09:56:50 ERROR  : BŁĄD:  modyfikacja lub usunięcie na tabeli "versions" narusza klucz obcy "fk_datablocks_versions" tabeli "datablocks"
+DETAIL:  Klucz (id)=(166773) ma wciąż odwołanie w tabeli "datablocks".
+2021-11-22 09:58:30 ERROR  : BŁĄD:  błąd składni w lub blisko "with ids"
+LINE 4: with ids as (
+        ^
+2021-11-22 10:56:03 ERROR  : BŁĄD:  błąd składni na końcu danych wejściowych
+LINE 15:   )
+            ^
+2021-11-22 10:57:50 ERROR  : BŁĄD:  błąd składni na końcu danych wejściowych
+LINE 15:   )
+            ^
+2021-11-22 10:58:27 ERROR  : BŁĄD:  kolumna a.order_id nie istnieje
+LINE 22:   LEFT JOIN b ON a.order_id = b.order_id
+                          ^
+2021-11-22 11:28:24 ERROR  : BŁĄD:  błąd składni w lub blisko "delete"
+LINE 3: delete from versiondatablocks where datablock id in(select i...
+        ^
+2021-11-22 11:28:43 ERROR  : BŁĄD:  błąd składni w lub blisko "id"
+LINE 3: delete from versiondatablocks where datablock id in(select i...
+                                                      ^
+2021-11-22 11:28:55 ERROR  : BŁĄD:  błąd składni w lub blisko "fileids"
+LINE 5: delete from files where id in (id in fileids);
+                                             ^
+2021-11-22 11:29:07 ERROR  : BŁĄD:  błąd składni w lub blisko "fid"
+LINE 5: delete from files where id in (select * fid in fileids);
+                                                ^
+2021-11-22 11:29:14 ERROR  : BŁĄD:  błąd składni w lub blisko "fileids"
+LINE 5: delete from files where id in (select fid in fileids);
+                                                     ^
+2021-11-22 11:29:23 ERROR  : BŁĄD:  modyfikacja lub usunięcie na tabeli "datastores" narusza klucz obcy "fk_datablocks_datastores" tabeli "datablocks"
+DETAIL:  Klucz (id)=(2) ma wciąż odwołanie w tabeli "datablocks".
+2021-11-22 11:29:44 ERROR  : BŁĄD:  modyfikacja lub usunięcie na tabeli "datastores" narusza klucz obcy "fk_datablocks_datastores" tabeli "datablocks"
+DETAIL:  Klucz (id)=(2) ma wciąż odwołanie w tabeli "datablocks".
+2021-11-22 11:29:45 ERROR  : BŁĄD:  modyfikacja lub usunięcie na tabeli "datastores" narusza klucz obcy "fk_datablocks_datastores" tabeli "datablocks"
+DETAIL:  Klucz (id)=(2) ma wciąż odwołanie w tabeli "datablocks".
+2021-11-22 11:30:04 ERROR  : BŁĄD:  kolumna "versionids" nie istnieje
+LINE 1: ...id from datablocks where datastoreid=2) RETURNING versionids...
+                                                             ^
+2021-11-22 11:30:28 ERROR  : BŁĄD:  relacja "versionid" nie istnieje
+LINE 3: ...elete from versions where id in ( select vid from versionid)...
+                                                             ^
+2021-11-22 11:30:59 ERROR  : BŁĄD:  relacja "versionid" nie istnieje
+LINE 2: ...elete from versions where id in ( select vid from versionid)...
+                                                             ^
+2021-11-22 11:32:40 ERROR  : BŁĄD:  relacja "fileid" nie istnieje
+LINE 1: delete from files where id in (select fid from fileid);
+                                                       ^
+2021-11-22 11:32:53 ERROR  : BŁĄD:  relacja "versionid" nie istnieje
+LINE 1: delete from versions where id in (select vid from versionid)...
+                                                          ^
+2021-11-22 11:34:53 ERROR  : BŁĄD:  modyfikacja lub usunięcie na tabeli "files" narusza klucz obcy "fk_versions_files" tabeli "versions"
+DETAIL:  Klucz (id)=(668) ma wciąż odwołanie w tabeli "versions".
+2021-11-22 11:36:42 ERROR  : BŁĄD:  błąd składni w lub blisko ","
+LINE 1: DELETE FROM versiondatablocks as a, versions as b, files as ...
+                                          ^
+2021-11-22 11:37:45 ERROR  : BŁĄD:  błąd składni w lub blisko ","
+LINE 1: DELETE FROM versiondatablocks as a, versions as b, files as ...
+                                          ^
+2021-11-22 11:38:06 ERROR  : BŁĄD:  błąd składni w lub blisko ","
+LINE 1: DELETE FROM versiondatablocks as a,
+                                          ^
+2021-11-22 11:40:36 ERROR  : BŁĄD:  błąd składni w lub blisko ","
+LINE 1: DELETE FROM versiondatablocks,
+                                     ^
+2021-11-22 11:40:57 ERROR  : BŁĄD:  błąd składni w lub blisko "files"
+LINE 3:  files
+         ^
+2021-11-22 11:41:13 ERROR  : BŁĄD:  błąd składni w lub blisko "files"
+LINE 1: DELETE FROM versiondatablocks versions files datablocks
+                                               ^
+2021-11-22 11:41:22 ERROR  : BŁĄD:  błąd składni w lub blisko ","
+LINE 2: DELETE FROM versiondatablocks, versions, files, datablocks
+                                     ^
+2021-11-22 11:46:43 ERROR  : BŁĄD:  nazwa tabeli "files" określona więcej niż raz
+2021-11-22 11:46:52 ERROR  : BŁĄD:  brakująca klauzula FROM dla tabeli "versiondatablocks"
+LINE 4: versiondatablocks.versionid = versions.id
+        ^
+2021-11-22 11:47:37 ERROR  : BŁĄD:  błąd składni w lub blisko "AND"
+LINE 4: AND files.id = versions.fileid
+        ^
+2021-11-22 11:47:44 ERROR  : BŁĄD:  modyfikacja lub usunięcie na tabeli "files" narusza klucz obcy "fk_versions_files" tabeli "versions"
+DETAIL:  Klucz (id)=(24572) ma wciąż odwołanie w tabeli "versions".
+2022-05-09 08:39:39 ERROR  : BŁĄD:  modyfikacja lub usunięcie na tabeli "files" narusza klucz obcy "fk_versions_files" tabeli "versions"
+DETAIL:  Klucz (id)=(1) ma wciąż odwołanie w tabeli "versions".
+2022-05-09 08:40:40 ERROR  : BŁĄD:  błąd składni w lub blisko "ON"
+LINE 1: ...stid in (select id from hosts where accountid=2)) ON DELETE ...
+                                                             ^
+2022-05-09 08:47:26 ERROR  : BŁĄD:  błąd składni w lub blisko "delete"
+LINE 10: delete from datablocks where accountid=2;
+         ^
+2022-05-09 08:59:06 ERROR  : BŁĄD:  błąd składni w lub blisko "delete"
+LINE 12: delete from hosts where accountid=2;
+         ^
+2022-05-09 08:59:58 ERROR  : BŁĄD:  modyfikacja lub usunięcie na tabeli "accounts" narusza klucz obcy "fk_apikeys_accounts" tabeli "apikeys"
+DETAIL:  Klucz (id)=(1) ma wciąż odwołanie w tabeli "apikeys".
+2022-05-09 09:00:55 ERROR  : BŁĄD:  błąd składni w lub blisko "ENABLE"
+LINE 17: ALTER TABLE apikeys DISABLE ENABLE ALL;
+                                     ^
+2022-09-05 14:24:13 ERROR  : Error connecting to the server: authentication method 10 not supported
+
+2022-09-05 14:24:30 ERROR  : Error connecting to the server: authentication method 10 not supported
+
